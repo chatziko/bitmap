@@ -1,6 +1,6 @@
 CC=gcc
 # CFLAGS=-c -Wall -Wextra -I /usr/local/include `libpng-config --cflags` -DUSEPNG -DUSEJPG
-CFLAGS=-c -Wall -Wextra -I /usr/local/include
+CFLAGS=-c -Wall -Wextra -I /usr/local/include -fPIC
 LDFLAGS=`libpng-config --ldflags` -lm
 AWK=awk
 
