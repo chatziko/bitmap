@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: make
-      run: make
+    - name: make libbmp.a
+      run: make libbmp.a
 
     - name: Upload
       uses: actions/upload-artifact@master
