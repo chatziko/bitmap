@@ -1,10 +1,11 @@
 CC=gcc
-CFLAGS=-c -Wall -Wextra -I /usr/local/include `libpng-config --cflags` -DUSEPNG -DUSEJPG
+# CFLAGS=-c -Wall -Wextra -I /usr/local/include `libpng-config --cflags` -DUSEPNG -DUSEJPG
+CFLAGS=-c -Wall -Wextra -I /usr/local/include `libpng-config --cflags`
 LDFLAGS=`libpng-config --ldflags` -lz -ljpeg -lm
 AWK=awk
 
 # Add your source files here:
-LIB_SOURCES=bmp.c
+LIB_SOURCES=bmp.c misc/gif.c
 LIB_OBJECTS=$(LIB_SOURCES:.c=.o)
 LIB=libbmp.a
 
